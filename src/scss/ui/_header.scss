@@ -1,0 +1,24 @@
+@use '../custom' as *;
+
+.header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    &__logo {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    &__title {
+        font-size: 4rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 6rem;
+        }
+    }
+}
